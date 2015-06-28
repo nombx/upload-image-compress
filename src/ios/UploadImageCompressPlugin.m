@@ -1,15 +1,15 @@
 /********* upload-image-compress-plugin.m Cordova Plugin Implementation *******/
-
+/*** why ****/
 #import <Cordova/CDV.h>
 
-@interface upload-image-compress-plugin : CDVPlugin {
+@interface UploadImageCompressPlugin : CDVPlugin {
   // Member variables go here.
 }
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation upload-image-compress-plugin
+@implementation UploadImageCompressPlugin
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command
 {
@@ -24,5 +24,7 @@
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
+
+
 
 @end
