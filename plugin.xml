@@ -1,27 +1,26 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="com.v7games.uploadimagecompress.plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>upload-image-compress-plugin</name>
-        <js-module name="upload-image-compress-plugin" src="www/upload-image-compress-plugin.js">
-            <clobbers target="cordova.plugins.upload-image-compress-plugin" />
+    <name>UploadImageCompressPlugin</name>
+        <js-module name="uploadImageCompressPlugin" src="www/UploadImageCompressPlugin.js">
+            <clobbers target="cordova.plugins.UploadImageCompressPlugin" />
         </js-module>
         <platform name="android">
             <config-file parent="/*" target="res/xml/config.xml">
-                <feature name="upload-image-compress-plugin">
-                    <param name="android-package" value="com.v7games.uploadimagecompress.plugin.upload-image-compress-plugin" />
+                <feature name="UploadImageCompressPlugin">
+                    <param name="android-package" value="com.v7games.uploadimagecompress.UploadImageCompressPlugin" />
                 </feature>
             </config-file>
             <config-file parent="/*" target="AndroidManifest.xml" />
-            <source-file src="src/android/upload-image-compress-plugin.java" target-dir="src/com/v7games/uploadimagecompress/plugin/upload-image-compress-plugin" />
+            <source-file src="src/android/uploadImageCompressPlugin.java" target-dir="src/com/v7games/uploadimagecompress/plugin/UploadImageCompressPlugin" />
         </platform>
         <platform name="ios">
             <config-file parent="/*" target="config.xml">
-                <feature name="upload-image-compress-plugin">
-                    <param name="ios-package" value="upload-image-compress-plugin" />
+                <feature name="UploadImageCompressPlugin">
+                    <param name="ios-package" value="UploadImageCompressPlugin" />
                 </feature>
             </config-file>
-            <source-file src="src/ios/upload-image-compress-plugin.m" />
+            <source-file src="src/ios/UploadImageCompressPlugin.m" />
         </platform>
     </plugin>
-
 
 
