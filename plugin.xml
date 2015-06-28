@@ -22,3 +22,6 @@
             <source-file src="src/ios/upload-image-compress-plugin.m" />
         </platform>
     </plugin>
+
+
+
